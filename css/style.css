@@ -1,0 +1,21 @@
+
+
+
+
+#home {
+  background-image: url("../img/MD-lollipop.png");
+  background-size: cover;
+  height: 600px;
+  padding-top: 50px;
+}
+
+#navbar li {
+  margin-left: 10px;
+}
+
+#logo {
+  height:312px;
+  margin-top: 150px;
+  margin: auto;
+
+}
