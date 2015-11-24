@@ -1,36 +1,40 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Cheat sheet CSS</title>
-        <meta name="description" content="css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Cheat sheet CSS</title>
+  <meta name="description" content="css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!--stylesheets-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/material.min.css" type="text/css">
+  <!--stylesheets-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/material.min.css" type="text/css">
 
-      <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-    <!-- mediaqueries -->
-    <meta name="viewport" content="width=device-width">
+  <!-- mediaqueries -->
+  <meta name="viewport" content="width=device-width">
 
-    <!-- fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/favicss3.png">
-    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/img/favicss3.ico" /><![endif]-->
-    <!--<meta name="viewport" content="width=device-width" />-->
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="img/favicss3.png">
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/img/favicss3.ico" /><![endif]-->
+  <!--<meta name="viewport" content="width=device-width" />-->
 
 
 </head>
+
 <body>
   <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -39,54 +43,210 @@
     <div class="container-fluid">
 
       <!-- NAVIGATION -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Cheat-sheet CSS</a>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Cheat-sheet CSS</a>
+          </div>
+          <div id="navbar" class="navbar-collapse navbar-right collapse">
+            <ul class="list-unstyled nav navbar-nav">
+              <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
+              <li><a href="#style" class="btn btn-default" role="button">Style</a></li>
+              <li><a href="#position" class="btn btn-default" role="button">Positions</a></li>
+              <li><a href="#about" class="btn btn-default" role="button">About</a></li>
+              <li><a href="#contact" class="btn btn-default" role="button">Contact</a></li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </nav>
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+
+          <img id="logo" src="img/logoCSS3.png" alt="logo CSS 3" />
+        </div>
       </div>
-      <div id="navbar" class="navbar-collapse navbar-right collapse">
-        <ul class="list-unstyled nav navbar-nav">
-          <li><a href="#synthaxe" class="btn btn-default" role="button">Synthaxe</a></li>
-          <li><a href="#style" class="btn btn-default" role="button">Style</a></li>
-          <li><a href="#position" class="btn btn-default" role="button">Positions</a></li>
-          <li><a href="#about" class="btn btn-default" role="button">About</a></li>
-          <li><a href="contact" class="btn btn-default" role="button">Contact</a></li>
-        </ul>
-      </div><!--/.navbar-collapse -->
-    </div>
-  </nav>
-
-<div class="row">
-  <div class="col-sm-8 col-sm-offset-2 col-md-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-
-      <img id="logo" src="img/logoCSS3.png" alt="logo CSS 3" />
-  </div>
-</div>
     </div>
   </div>
 
-  <div class="container">
+  <div id="content" class="container">
     <!-- Example row of columns -->
     <div class="row">
-      <div class="col-md-4">
-        <h2>Heading</h2>
+      <div id="synthaxe" class="col-lg-4 col-md-10 col-sm-12">
+        <h2>Synthaxe du CSS</h2>
+        <p>
+          <code>/* commentaire */ </code>ecrire un commentaire ignoré par le navigateur.</p>
+        <ul>
+          <li>
+            <code>balise1 {</code>
+            <ul>
+              <li>
+                <code>propriété1 = valeur;</code>
+              </li>
+              <li>
+                <code>propriété2 = valeur;</code>
+              </li>
+              <li>
+                <code>propirété3 = valeur;</code>
+              </li>
+            </ul>balise2 {</code>
+          </li>
+          <li>
+            <code>balise2 {</code>
+            <ul>
+              <li>
+                <code>propriété = valeur;</code>
+              </li>
+              <li>
+                <code>...</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <code>balise1, balise2, ... {...</code> applique le MÊME style aux balises 1 2 ...</li>
+          <li>
+            <code>balise1 balise2 {...</code> applique le style sur les balise2 DANS les balises1.</li>
+          <li>
+            <code>balise1 + balise2 {...</code> applique le style sur les balise2 qui SUIVENT balise1 (pas si plusieurs balise2 a la suite).</li>
+          <li>
+            <code>balise[attribut] {...</code> applique le style aux balises balises qui contiennent l'attribut attribut. {...
+          </li>
+          <li>
+            <code>balise:hover {...</code> change le style lors du survole à la souris de la balise.</li>
+          <li>
+            <code>balise:focus {...</code> change le style lors du survole à la souris de la balise.</li>
+          <li>
+            <code>a:active {...</code> change le style quand je clique dessus.</li>
+          <li>
+            <code>a:visited {...</code> change le style quand j'ai deja visitéle site.</li>
+        </ul>
+        <h2>images et marges</h2>
+        <ul>
+          <li>
+            <code>background-color: red;</code> met une couleur dans le font de la balise (ici rouge).</li>
+          <li>
+            <code>background-image: url("adresseimage.png");</code> met une image en font.</li>
+          <li>
+            <code>background-attachement:fixed;</code> fixe le font, pas de défilement de l'image.</li>
+          <li>
+            <code>background-repeat: no-repeat;</code> annule la repetition de l'image.</li>
+          <li>
+            <code>background-repeat: repeat-x;</code> repeat-y; repetition sur une ligne ou sur une seule colonne.</li>
+          <li>
+            <code>background-alignement: top right;</code> plage l'arrière font.</li>
+          <li>
+            <code>background: url("image1") no-repeat top right, url("image2") no-repeat ...;</code> permet d'appliquer toute les modifications sur un seul attibut avec plusieurs images.</li>
+          <li>
+            <code>margin:10px</code> laisse un espace entre l'exterieur et la bordure. tune: top left bottom right.</li>
+          <li>
+            <code>padding:10px</code> laisse un espace entre la bordure et le contenu. tune: top left bottom right.</li>
+        </ul>
+
+        <p><a class="btn btn-default" href="#styles" role="button">balises de style &raquo;</a></p>
+      </div>
+      <div id="style" class="col-lg-4 col-md-10 col-sm-12">
+        <h2>Propriétés de style</h2>
+        <ul>
+          <li>
+            <code>font-size: 10px;</code> change la taille du texte ( en pixel, ou en relatif-em -ex medium large...)</li>
+          <li>
+            <code>font-family: Arial, Time New Roman ;</code> change la police du texte si presente sur la machine. voir google web font pour en avoir d'autres.</li>
+          <li>
+            <code>font-style: italic;</code> met en italique.</li>
+          <li>
+            <code>font-weight: bold;</code> met en gras.</li>
+          <li>
+            <code>text-decoration: underline;</code> souligne.</li>
+          <li>
+            <code>text-decoration: line-trought;</code> barre le texte.</li>
+          <li>
+            <code>text-decoration: overline;</code> une barre en haut du texte.</li>
+          <li>
+            <code>text-align: center; right; left; justify;</code> alignement centré droit ou gauche.</li>
+          <li>
+            <code>text-shadow:</code> ombre sur le texte ( idem box-shadow ).</li>
+          <li>
+            <code>word-wrap: break-word;</code> retour à la ligne plutot que barre horizontale.</li>
+          <li>
+            <code>text-transform: uppercase;</code> met le texte en majuscules.</li>
+          <li>
+            <code>color: #FF00CC;</code> met en couleur correspondant ( peut aussi avoir la valeur rgba(111,202,21,a) pour un code couleur rgb+a entre 0 et 1 pour opacité).</li>
+        </ul>
+        <h2>Taille et bordures</h2>
+        <ul>
+          <li>
+            <code>border: 2px black solid;</code> crée une bordure avec les attributs (ici noir large de 2px et continue).</li>
+          <li>
+            <code>border-top border-right borde-left border-bottom</code> associe à un coté de la bordure.</li>
+          <li>
+            <code>border-radius: 10px; ou: 5px 10px 15px 20px</code> arrondie la bordure pour tous ou chaque coin.</li>
+          <li>
+            <code>box-shadow: 10px 5px 3px blue;</code> crée une ombre avec 10px de décalage horizontal, 5px de décalage vertical, 3px d'adoucissement , de couleur bleue.</li>
+          <li>
+            <code>height: 50%;</code> hauteur du block en % ou en px.</li>
+          <li>
+            <code>width: 50%;</code> largeur du block en % ou en px.</li>
+          <li>
+            <code>max-height:</code> ou
+            <code>min-height:</code> limite la hauteur.</li>
+          <li>
+            <code>max-width:</code> ou
+            <code>min-width:</code> limite la largeur.</li>
+          <li>
+            <code>margin: auto;</code> centre le bloc ( doit avoir d'abord la taille de définit).</li>
+          <li>
+            <code>overflow:auto;</code> crée des barre de déplacement pour le texte qui dépasse du block.</li>
+          <li>
+            <code>border-collapse: collapse;</code> fusionne les bordures de tableau pour en avoir qu'une.</li>
+        </ul>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div id="position" class="col-lg-4 col-md-10 col-sm-12">
+        <h2>Positionnement</h2>
+        <ul>
+          <li>
+            <code>float: left; center; right;</code> le bloc "flotte"(se superpose) au dessus du suivanten restant a gauche, droite ou au centre.</li>
+          <li>
+            <code>position: absolute;</code> on positionne le bloc de manière stricte selon les coordonnées: top: Xpx; et left: Xpx; .</li>
+          <li>
+            <code>position: fixed;</code> on positionne le bloc de manière stricte selon les coordonnées: top: Xpx; et left: Xpx; il ne bouge pas avec le défilement .</li>
+          <li>
+            <code>position: relative;</code> on decale le bloc de ça position normale left:Xpx;....</li>
+          <li>
+            <code>vertical-align: top; center; bottom;</code> aligne les block horizontalement par rapport au haut.</li>
+          <li>changer le statut d'une balise:
+            <ul>
+              <li>
+                <code>display:block;</code>
+              </li>
+              <li>
+                <code>display:inline;</code>
+              </li>
+              <li>
+                <code>display:inline-bloc;</code> transforme la balise en balise inline ou bloc ou en mix des deux.</li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div id="about" class="col-lg-4 col-md-10 col-sm-12">
+        <h2>A propos</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
+      <div id="contact" class="col-lg-4 col-md-10 col-sm-12">
+        <h2>Contact</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-     </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
@@ -96,16 +256,25 @@
     <footer>
       <p>&copy; Company 2015</p>
     </footer>
-  </div> <!-- /container -->
+  </div>
+  <!-- /container -->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto');
+    ga('send', 'pageview');
   </script>
   <!-- scrpts#2 -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -113,4 +282,5 @@
   <script src="js/material.min.js"></script>
 
 </body>
+
 </html>
