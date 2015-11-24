@@ -1,6 +1,31 @@
+/*------GENERAL PAGE STYLE-------*/
+
+body {
+  font-size: 17px !important;
+  font-family:'Merriweather Sans', sans-serif !important;
+}
 
 
+ul {list-style: none;}
+li{
+  margin-bottom: 3px;
+}
+h2 {
+  padding-top: 20px;
+}
+h2 i  {
+  color: rgb(23, 104, 119);
+  margin-right: 5px;
+}
+code {
+  color: rgb(13, 202, 228) !important;
+  background-color: rgb(59, 59, 59) !important;
+  border: 1px solid rgb(46, 37, 244);
+  font-weight: 500 !important;
+  margin-bottom: 3px;
+}
 
+/*----------HEADER STYLE-----------*/
 
 #home {
   background-image: url("../img/MD-lollipop.png");
@@ -17,5 +42,10 @@
   height:312px;
   margin-top: 150px;
   margin: auto;
+}
 
+/*--------FOOTER STYLE-------*/
+
+footer {
+  color: rgb(133, 133, 133);
 }

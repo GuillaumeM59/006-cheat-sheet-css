@@ -16,7 +16,7 @@
   <!--stylesheets-->
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/material.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -24,12 +24,11 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic" rel="stylesheet" type="text/css">
 
   <!-- favicon -->
-  <link rel="icon" type="image/png" href="img/favicss3.png">
-  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="img/img/favicss3.ico" /><![endif]-->
+  <link rel="icon" type="image/png" href="favicss3.png">
+  <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicss3.ico" /><![endif]-->
   <!--<meta name="viewport" content="width=device-width" />-->
 
 
@@ -75,15 +74,17 @@
       </div>
     </div>
   </div>
+  <!--    HEADER END      -->
 
-  <div id="content" class="container">
-    <!-- Example row of columns -->
+  <div class="container">
+    <!-- CONTENT-->
     <div class="row">
-      <div id="synthaxe" class="col-lg-4 col-md-10 col-sm-12">
-        <h2>Synthaxe du CSS</h2>
+      <section id="synthaxe" class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+        <h2 id="content"><i class="fa fa-keyboard-o fa-2x"></i>Synthaxe du CSS</h2>
         <p>
           <code>/* commentaire */ </code>ecrire un commentaire ignoré par le navigateur.</p>
         <ul>
+          <li>Règles de synthaxe en CSS:</li>
           <li>
             <code>balise1 {</code>
             <ul>
@@ -94,40 +95,42 @@
                 <code>propriété2 = valeur;</code>
               </li>
               <li>
-                <code>propirété3 = valeur;</code>
-              </li>
-            </ul>balise2 {</code>
-          </li>
-          <li>
-            <code>balise2 {</code>
-            <ul>
-              <li>
-                <code>propriété = valeur;</code>
+                <code>propriété3 = valeur;</code>
               </li>
               <li>
-                <code>...</code>
+                <code>}</code>
               </li>
             </ul>
           </li>
           <li>
-            <code>balise1, balise2, ... {...</code> applique le MÊME style aux balises 1 2 ...</li>
-          <li>
-            <code>balise1 balise2 {...</code> applique le style sur les balise2 DANS les balises1.</li>
-          <li>
-            <code>balise1 + balise2 {...</code> applique le style sur les balise2 qui SUIVENT balise1 (pas si plusieurs balise2 a la suite).</li>
-          <li>
-            <code>balise[attribut] {...</code> applique le style aux balises balises qui contiennent l'attribut attribut. {...
+            <code>balise2 {</code>
           </li>
           <li>
-            <code>balise:hover {...</code> change le style lors du survole à la souris de la balise.</li>
+            <code>propriété = valeur;</code>
+          </li>
           <li>
-            <code>balise:focus {...</code> change le style lors du survole à la souris de la balise.</li>
-          <li>
-            <code>a:active {...</code> change le style quand je clique dessus.</li>
-          <li>
-            <code>a:visited {...</code> change le style quand j'ai deja visitéle site.</li>
+            <code>...</code>
+          </li>
+        </li>
+        <li>
+          <code>balise1, balise2, ... {...</code> applique le MÊME style aux balises 1 2 ...</li>
+        <li>
+          <code>balise1 balise2 {...</code> applique le style sur les balise2 DANS les balises1.</li>
+        <li>
+          <code>balise1 + balise2 {...</code> applique le style sur les balise2 qui SUIVENT balise1 (pas si plusieurs balise2 a la suite).</li>
+        <li>
+          <code>balise[attribut] {...</code> applique le style aux balises balises qui contiennent l'attribut attribut. {...
+        </li>
+        <li>
+          <code>balise:hover {...</code> change le style lors du survole à la souris de la balise.</li>
+        <li>
+          <code>balise:focus {...</code> change le style lors du survole à la souris de la balise.</li>
+        <li>
+          <code>a:active {...</code> change le style quand je clique dessus.</li>
+        <li>
+          <code>a:visited {...</code> change le style quand j'ai deja visitéle site.</li>
         </ul>
-        <h2>images et marges</h2>
+        <h2><i class="fa fa-image fa-2x"></i>Images et marges</h2>
         <ul>
           <li>
             <code>background-color: red;</code> met une couleur dans le font de la balise (ici rouge).</li>
@@ -150,9 +153,11 @@
         </ul>
 
         <p><a class="btn btn-default" href="#styles" role="button">balises de style &raquo;</a></p>
-      </div>
-      <div id="style" class="col-lg-4 col-md-10 col-sm-12">
-        <h2>Propriétés de style</h2>
+      </section>
+      <!--    SECTION SYNTHAXE END      -->
+
+      <section  class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+        <h2 id="style"><i class="fa fa-text-height fa-2x"></i>Propriétés de style</h2>
         <ul>
           <li>
             <code>font-size: 10px;</code> change la taille du texte ( en pixel, ou en relatif-em -ex medium large...)</li>
@@ -179,7 +184,7 @@
           <li>
             <code>color: #FF00CC;</code> met en couleur correspondant ( peut aussi avoir la valeur rgba(111,202,21,a) pour un code couleur rgb+a entre 0 et 1 pour opacité).</li>
         </ul>
-        <h2>Taille et bordures</h2>
+        <h2><i class="fa fa-arrows fa-2x"></i>Taille et bordures</h2>
         <ul>
           <li>
             <code>border: 2px black solid;</code> crée une bordure avec les attributs (ici noir large de 2px et continue).</li>
@@ -206,10 +211,12 @@
           <li>
             <code>border-collapse: collapse;</code> fusionne les bordures de tableau pour en avoir qu'une.</li>
         </ul>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div id="position" class="col-lg-4 col-md-10 col-sm-12">
-        <h2>Positionnement</h2>
+        <p><a class="btn btn-default" href="#" role="button">Positionnement</a></p>
+      </section>
+      <!--    SECTION STYLE END      -->
+
+      <section  class="col-lg-10 col-lg-offset-1 col-md-offset-1 col-md-10 col-sm-12">
+        <h2 id="position"><i class="fa fa-th fa-2x"></i>Positionnement</h2>
         <ul>
           <li>
             <code>float: left; center; right;</code> le bloc "flotte"(se superpose) au dessus du suivanten restant a gauche, droite ou au centre.</li>
@@ -234,27 +241,38 @@
             </ul>
           </li>
         </ul>
+      </section>
+      <!--    SECTION POSITION END      -->
 
+      <section class="col-lg-5 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+        <h2 id="about"><i class="fa fa-hand-spock-o fa-2x"></i>A propos</h2>
+        <p>Cheat-sheet du langage CSS réalisé lors de l'autoformation au sain du programme SIMPLON. Je fais partie de la 1ère promotion de l'essaimage de Roubaix</p>
+        <p>
+          <a href="http://simplon.co/roubaix">
+            <img src="img/Logo-Roubaix.jpeg" alt="simplon roubaix" class="img-responsive">
+          </a>
+        </p>
+      </section>
+      <!--    ABOUT END      -->
 
-
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      <section class="col-lg-5 col-md-10 col-md-offset-1 col-sm-12">
+        <h2 id="contact"><i class="fa fa-envelope-o fa-2x"></i>Contact</h2>
+        <p>Des remarques? contactez-moi! </p>
+        <p>Fan? suivez-moi! </p>
+        <ul class="list-unstyled list-inline">
+          <li><a class="btn btn-default" href="mailto:maanier-guillaume@orange.fr" role="button"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+          <li><a class="btn btn-default" href="http://github.com/GuillaumeM59" role="button"><i class="fa fa-github fa-lg"></i></a></li>
+          <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+          <li><a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+        </ul>
       </div>
-      <div id="about" class="col-lg-4 col-md-10 col-sm-12">
-        <h2>A propos</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div id="contact" class="col-lg-4 col-md-10 col-sm-12">
-        <h2>Contact</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-      </div>
-    </div>
+    </section>
+    <!--    CONTACT END      -->
 
     <hr>
 
-    <footer>
-      <p>&copy; Company 2015</p>
+    <footer class="text-center">
+      <p>&copy; Free to copy: Open source Project made by GuillaumeM59</p>
     </footer>
   </div>
   <!-- /container -->
